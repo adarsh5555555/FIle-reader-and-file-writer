@@ -14,11 +14,9 @@ public class Filereader {
             red = reader.read();
             System.out.print((char)red);
         }while(red!=-1);
-        int num = 5/0;
-            System.out.println(num);
 
-
-        }catch (IOException exception){
+        }
+        catch (IOException exception){
             if(exception.getMessage().equals(fileName+" (No such file or directory)")){
                 System.out.println("file is missing in the system");
             }else{
